@@ -3,12 +3,8 @@
 import 'dart:io';
 void main()
 {
-  List D= list();
-  print(D.toList());
-
+  List l1=[1,2,3,4,5,6,1,2,3,4];
+  List l= l2(l1);
+  print(l);
 }
-dynamic list()
-{
-  List s=[1,2,3,4,"Dixit"];
-  return s;
-}
+List l2(List l1)=> l1.toSet().toList();
